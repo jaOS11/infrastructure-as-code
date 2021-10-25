@@ -1,0 +1,16 @@
+Host bastion
+  HostName <PublicIP>
+  User ubuntu
+  IdentityFile <path/to/keys/publickey>
+
+Host backend
+  HostName <PrivateIP>
+  User ubuntu
+  ProxyCommand ssh -q -W %h:%p bastion
+  IdentityFile <path/to/keys/privatekey>
+
+Host webserver
+  HostName <PublicIP>
+  User ubuntu
+  IdentityFile <path/to/keys/publickey>
+
