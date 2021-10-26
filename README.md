@@ -40,5 +40,5 @@ ssh bastion
 mysql -u username -h rds.entrypoint -P 3306 -p
 ``` 
  
-##Conclusion
-Ye! Will add later!
+## Conclusion
+The infrastructure is still under development.
